@@ -68,11 +68,11 @@ except Exception as e:
 if sleepTime < 1 or sleepTime > 3600:
 	print "sleeptime value must be 1-3600"
 	exit(1)
-if minDailyRate < 0.00003: # 0.003% daily is 1% yearly
+if minDailyRate < Decimal(0.00003): # 0.003% daily is 1% yearly
 	print "mindaily rate is set too low, must be >= 0.003% "
 	print minDailyRate
 	exit(1)
-if minDailyRate > 0.05: # 0.003% daily is 1% yearly
+if minDailyRate > Decimal(0.05): # 0.003% daily is 1% yearly
 	print "mindaily rate is set too high, must be <= 5% "
 	print minDailyRate
 	exit(1)	
