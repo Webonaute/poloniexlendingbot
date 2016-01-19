@@ -69,10 +69,10 @@ if sleepTime < 1 or sleepTime > 3600:
 	print "sleeptime value must be 1-3600"
 	exit(1)
 if minDailyRate < 0.00003 or minDailyRate > 0.05: # 0.003% daily is 1% yearly
-	print "mindaily rate is set too low or too high, must be 0.003-5%"
+	print "mindaily rate is set too low or too high, must be 0.003-5% (%s)" % minDailyRate
 	exit(1)
 if maxDailyRate < 0.00003 or maxDailyRate > 0.05:
-	print "maxdaily rate is set too low or too high, must be 0.003-5%"
+	print "maxdaily rate is set too low or too high, must be 0.003-5% (%s)" % maxDailyRate
 	exit(1)
 if spreadLend < 1 or spreadLend > 20:
 	print "spreadlend value must be 1-20 range"
