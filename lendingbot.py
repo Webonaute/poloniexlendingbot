@@ -76,7 +76,7 @@ if minDailyRate > Decimal("0.05"): # 0.003% daily is 1% yearly
 	print "mindaily rate is set too high, must be <= 5% "
 	print minDailyRate
 	exit(1)	
-if maxDailyRate < 0.00003 or maxDailyRate > 0.05:
+if maxDailyRate < Decimal("0.00003") or maxDailyRate > 0.05:
 	print "maxdaily rate is set too low or too high, must be 0.003-5%"
 	exit(1)
 if spreadLend < 1 or spreadLend > 20:
