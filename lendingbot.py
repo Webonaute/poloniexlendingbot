@@ -120,7 +120,7 @@ def refreshTotalLended():
 def stringifyTotalLended():
 	result = 'Lended: '
 	for key in sorted(totalLended):
-		result += '[' + "%.3f" % Decimal(totalLended[key]) + ' '
+		result += '[' + "%.8f" % Decimal(totalLended[key]) + ' '
 		result += key + '] '
 	return result
 
